@@ -31,7 +31,8 @@ export default function Home() {
    */
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
-    // Since we store `web3Modal` as a reference, we need to access the `current` value to get access to the underlying object
+    // Since we store `web3Modal` as a reference, we need to access the `current` 
+    // value to get access to the underlying object
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
 
@@ -106,9 +107,7 @@ export default function Home() {
    */
   const checkIfAddressInWhitelist = async () => {
     try {
-      // We will need the signer later to get the user's address
-      // Even though it is a read transaction, since Signers are just special kinds of Providers,
-      // We can use it in it's place
+      // use a signer to get the user's address
       const signer = await getProviderOrSigner(true);
       const whitelistContract = new Contract(
         WHITELIST_CONTRACT_ADDRESS,
@@ -209,7 +208,7 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./crypto-devs.svg" />
+          <img className={styles.image} src="./crypto-devs.svg" alt="nothing here" />
         </div>
       </div>
 
