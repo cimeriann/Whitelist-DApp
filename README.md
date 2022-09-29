@@ -1,6 +1,6 @@
 # Whitelist-DApp
 This is a whitelist decentralized application for an upcoming nft collection.
-Users can connnect to join the whitelist by linking their accounts on metamask and clicking the "Join WhiteList" button. This is part of the lessons in the Sophomore Track at learnweb3(https://learnweb3.io/)
+Users can join the whitelist by linking metamask accounts and clicking the "Join WhiteList" button. Requires the user to be on the goerli testnet. This is part of the lessons in the Sophomore Track at learnweb3(https://learnweb3.io/)
 
 ## Project Layout
 * /hardhat-config - contains the backend and the smart contracts
@@ -9,7 +9,7 @@ Users can connnect to join the whitelist by linking their accounts on metamask a
 
 ## Setup
 ### Backend
-* Clone the repository, and `cd` into the hardhat-config directory and simply run npm install
+* Clone the repository, and `cd` into the `hardhat-config` directory and simply run `npm install`
 * Next, you'll need to compile the smart contracts with `npx hardhat compile`
 * Deploy the smart contract to any testnet - I used the goerli testnet as most other testnets have been deprecated
 * You'll need to provide your metamask private key and an rpc node from a provider. 
