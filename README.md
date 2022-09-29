@@ -5,7 +5,7 @@ Users can connnect to join the whitelist by linking their accounts on metamask a
 ## Project Layout
 * /hardhat-config - contains the backend and the smart contracts
 * /whiitelistdapp-frontend - contains the frontend with which a user might interact with 
-*                             the smart contract
+* the smart contract
 
 ## Setup
 ### Backend
