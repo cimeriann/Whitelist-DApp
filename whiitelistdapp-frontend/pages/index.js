@@ -31,7 +31,7 @@ export default function Home() {
    */
   const getProviderOrSigner = async (needSigner = false) => {
     // Connect to Metamask
-    // Since we store `web3Modal` as a reference, we need to access the `current` 
+    // Since we store `web3Modal` as a reference, we need to access the `current`
     // value to get access to the underlying object
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
@@ -208,12 +208,16 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./crypto-devs.svg" alt="nothing here" />
+          <img
+            className={styles.image}
+            src="./crypto-devs.svg"
+            alt="nothing here"
+          />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by ScrumOpsChainDevBlock
       </footer>
     </div>
   );
