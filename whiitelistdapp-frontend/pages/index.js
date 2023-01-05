@@ -198,7 +198,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to FishStake</h1>
+          <h1 className={styles.title}>Welcome to StakedPunks</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
           </div>
